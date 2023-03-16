@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --black: #1f1c1c;
+    --offwhite: #FDFDFD;
+    --lightblue: #858E9F;
+
+}
+
+.font {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Basic CSS reset */
+*,
+:after,
+:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+/* You start your css below */
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 5px;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.login_sektion {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.img_overskrift{
+    color: #FDFDFD;
+    display: flex;
+    justify-content: center;
+    padding-top: 6%;
+    font-size: 5rem;
+    letter-spacing: 3px;
+}
+
+.billed_sektion {
+    background-image: url('../img/forside.jpg');
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hovedindhold {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lejeoplysninger {
+    background-color:#1f1c1c;
+    color: #FDFDFD;
+    width: 300px;
+    padding: 25px;
+}
+
+.udstyrssektion {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-right: 5%;
+    margin-left: 5%;
+    border: solid 1px #858E9F;
+    padding: 20px
+}
+
+.formular {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+label {
+    border: 1px solid #858E9F;
+    display: block;
+    text-align: right;
+    margin: 10px 5px 0 0;
+    padding: 19px;
+}
+
+h1{
+    letter-spacing: 3px;
+}
+
+.checkboks {
+    margin-left: 10px;
+}
+
+.flexsektion {
+    width: 275px;
+    margin: 25px;
+}
+
+.videreknap {
+    background-color: #858E9F;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    width: 8rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-top: 15px;
+    letter-spacing: 3px;
+}
+
+.totaldkk {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.totalindhold {
+    padding: 10px;
+    border: 1px solid #858E9F;
+}

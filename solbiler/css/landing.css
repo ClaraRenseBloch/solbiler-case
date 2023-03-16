@@ -1,0 +1,335 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+
+@import url(./reset.css);
+
+
+
+/* Basic styling */
+
+:root {
+    --black: #1f1c1c;
+    --offwhite: #FDFDFD;
+    --lightblue: #858E9F;
+
+    font-family: "adobe-heiti-std", sans-serif;
+
+    overflow-x: hidden;
+}
+
+.font {
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: var(--offwhite);
+}
+
+
+/* Navigation bar  */
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__menu {
+    display: flex;
+    flex: 1 1 0%;
+    justify-content: flex-end;
+    margin: 0px 16px;
+    color: var(--offwhite);
+    
+}
+
+.navbar__menu a {
+    color: var(--white);
+    margin: 0 16px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: 0.5s;
+    padding: 8px 16px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+
+.navbar__menu a.is-active, .navbar__menu a:hover {
+    background-color: var(--lightblue);
+    color: var(--white);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 91%;
+    z-index: 99;
+    background-color: var(--black);
+    padding: 17px 32px;
+}
+
+.logo a{
+    color: var(--offwhite);
+    font-size: 1.4rem;
+    text-decoration: none;
+    transition: 0.5s;
+    letter-spacing: 3px;
+
+}
+
+
+
+
+/*  Hero content */
+
+.hero {
+    padding-top: px;
+    height: 80vh;
+    width: 120vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 1rem;
+    background-image: url(../img/forside.jpg);
+    background-position: center;
+    padding-bottom: 12%;
+}
+
+.hero_header {
+    font-weight: 800;
+    font-size: 50px;
+    text-align: left;
+    letter-spacing: 0.045em;
+    color: var(--white);
+    margin-top: 0px;
+    line-height: 40px;
+    width: 90%;
+    margin-bottom: 0px;
+}
+
+.hero_text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    padding-left: 4%;
+    color: var(--white);
+    width: 98%;
+}
+
+.hero a {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+    letter-spacing: 0.045em;
+    text-decoration: none;
+    padding: 15px 30px;
+    
+    transition: .4s;
+}
+
+.hero a:hover {
+color: var(--offwhite);
+background-color: var(--black);
+transition: all 0.3s ease 0s;
+}
+
+.lp_buttons{
+    padding-top: 1%;
+    padding-right: 71%;
+}
+
+.left_button{
+    background-color: var(--offwhite);
+    color: var(--black);
+}
+
+
+
+/* FILTER FUNKTION ****************************************/
+
+.formular {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    top: 80px;
+    width: 90%;
+    margin-left: 5%;
+    height: 180px;
+    background-color: var(--black);
+    font-family: 'Itim', cursive;
+    margin-top: -1.5%;
+}
+
+.formular_overskrift {
+    text-align: center;
+    font-size: 1.4rem;
+
+}
+
+.formular_felter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 16px;
+    color: var(--offwhite);
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 3%;
+    
+}
+
+#afhentning, #aflevering, #personer {
+    width: 9.9rem;
+    padding: 5px;
+    background-color: var(--black);
+    color: #787676;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    font-size: 19.5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#afhentning {
+    width: 9.9rem;
+    padding: 5px;
+    background-color: var(--black);
+    color: #787676;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    font-size: 19.5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#kufferter {
+    width: 9.9rem;
+    padding: 5px;
+    background-color: var(--black);
+    color: #787676;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    font-size: 19.5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.etiket {
+    margin: 15px 0 5px;
+    display: block;
+}
+
+.formular_knap {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.knap {
+    cursor: pointer;
+    border: none;
+    padding: 10px 40px;
+    background-color: var(--lightblue);
+    font-family: 'Montserrat', sans-serif;
+    color: var(--offwhite);
+}
+
+img {
+    max-width: 12rem;
+    max-height: 12rem;
+}
+.bil_sektion {
+    padding: 50px 0;
+    max-width: 1024px;
+    /* Forhøjet fra 800px */
+    margin: 0 auto;
+    /* text-align: center; */
+    padding-top: 7%;
+}
+
+.bil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid var(--lightblue);
+    /* Farve ændret fra black */
+    padding: 15px;
+    margin: 30px 0px;
+
+
+}
+
+.bilMM {
+    font-size: 1.5rem;
+    width: 13rem;
+}
+
+.bildetaljer {
+    width: 13rem;
+}
+
+.prisogbook {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 6rem;
+}
+
+.lejeudgift {
+    font-size: 1.5rem;
+}
+
+.booknu_knap {
+    background-color: var(--lightblue);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    width: 8rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    letter-spacing: 3px;
+}
+
+@media only screen and (max-width: 900px) {
+    .formular {
+        margin: 0 auto;
+    }
+    .bil {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 500px;
+        align-items: center;
+    }
+    .bilMM, .bildetaljer {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .billed_sektion {
+        height: 475px;
+    }
+    .formular {
+        width: 310px;
+        height: 375px;
+    }
+}

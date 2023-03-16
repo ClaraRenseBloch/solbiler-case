@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solbiler</title>
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body class="font">
+
+
+    <!-- Navigation bar  -->
+
+    <nav class="navbar">
+
+        <div class="container">
+           <div class="logo">
+            <a aria-label="logo" href="landingpage.html">Solbiler Aps</a>
+           </div>
+
+            <div class="navbar__menu">
+                <a aria-label="om os" href="omos.html">Om os</a>
+                <a aria-label="priser" href="">Priser</a>
+                <a aria-label="kontakt" href="">Kontakt</a>
+            </div>
+
+           
+        </div>
+    </nav>
+
+   
+
+
+
+
+
+    <!-- Hero content -->
+
+    <header class="hero">
+        <h1 class="hero_header"> Lej din drømmebil hos os</h1>
+        <p class="hero_text"> Oplev bilerne hos din nærmeste Solbiler forhandler </p>
+
+        <div class="lp_buttons">
+            <a class="left_button" aria-label ="læs mere udlejning" href=""> LÆS MERE OM UDLEJNING HER </a>
+        </div>
+    </header>
+
+
+
+
+<section class="billed_sektion">
+    <form id="formular" class="formular" action="" method="">
+
+        <div class="formular_felter">
+            <div>
+                <label for="afhentning" class="etiket">Afhentning</label>
+                <input type="date" id="afhentning" required>
+            </div>
+
+            <div>
+                <label for="aflevering" class="etiket">Aflevering</label>
+                <input type="date" id="aflevering" required>
+            </div>
+
+            <div>
+                <label for="personer" class="etiket">Antal personer</label>
+                <input type="number" value="1" id="personer" max="7" min="1" required>
+            </div>
+
+            <div>
+                <label for="kufferter" class="etiket">Antal kufferter</label>
+                <select id="kufferter">
+                    <option value="0">0 - kun taske</option>
+                    <option value="1">1 kuffert</option>
+                    <option value="2">2 kufferter</option>
+                    <option value="3">3 kufferter</option>
+                    <option value="4">4 kufferter</option>
+                </select>
+            </div>
+        <div class="formular_knap">
+            <button id="knap" class="knap" type="submit">VIS TILBUD</button>
+        </div>
+        </div>
+
+    </form>
+</section>
+
+<section class="bil_sektion" id="bil_sektion"></section>
+
+<template id="skabelon_output">
+    <div class="bil">
+        <img>
+        <div class="bilMM"></div>
+        <div class="bildetaljer">
+            <div class="kategori">Kategori: </div>
+            <div class="antalpersoner">Personer: </div>
+            <div class="antalkufferter">Kufferter: </div>
+        </div>
+        <div class="prisogbook">
+            <div class="lejeudgift"></div>
+            <a href="#" class="booknu_knap">Book nu</a>
+        </div>
+    </div>
+</template>
+
+
+
+
+<script src="js/javascript.js"></script>
+    
+</body>
+</html>

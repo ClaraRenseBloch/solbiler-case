@@ -1,0 +1,42 @@
+
+
+{
+    "billiste" : [
+    {
+        "bilmaerke" : "BMW X7",
+        "billede": "img/bmw_x7.png",
+        "billedtekst": "Billede af udlejningsbil",
+        "kategori" : "Budget",
+        "personer": "4",
+        "kufferter": "4",
+        "tillaeg": "0"
+    },
+    {
+        "bilmaerke" : "BMW X3",
+        "billede" : "img/bmw_x3.png",
+        "billedtekst" : "Billede af udlejningsbil",
+        "kategori": "Mellemklasse",
+        "personer": "5",
+        "kufferter": "3",
+        "tillaeg": "60"
+    },
+    {
+        "bilmaerke": "Mercedes Coupé",
+        "billede": "img/mercedes_coupe.png",
+        "billedtekst": "Billede af udlejningsbil",
+        "kategori": "Mellemklasse",
+        "personer": "5",
+        "kufferter": "3",
+        "tillaeg": "60"
+    },
+    {
+        "bilmaerke": "Mercedes SUV",
+        "billede": "img/mercedes_suv.png",
+        "billedtekst": "Billede af udlejningsbil",
+        "kategori" : "Stationcar",
+        "personer": "5",
+        "kufferter" : "4",
+        "tillaeg" : "105"
+    }
+]
+}
